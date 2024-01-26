@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Donation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".P1Hod">
+
+    <Button
+        android:id="@+id/ShareButton"
+        android:layout_width="137dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/blue_button"
+        android:backgroundTint="#2196F3"
+        android:text="שתף"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <TextView
+        android:id="@+id/DescriptionDonation"
+        android:layout_width="553dp"
+        android:layout_height="320dp"
+        android:text="תיאור התרומה"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <RadioButton
+        android:id="@+id/CarChoice"
+        android:layout_width="155dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/material_dynamic_tertiary80"
+        android:text="     רכבים"
+        app:layout_constraintEnd_toEndOf="@+id/category"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <RadioButton
+        android:id="@+id/FoodChoice"
+        android:layout_width="156dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/design_default_color_secondary"
+        android:text="     אוכל"
+        app:layout_constraintEnd_toEndOf="@+id/CarChoice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CarChoice"
+        app:layout_constraintTop_toBottomOf="@+id/CarChoice" />
+
+    <RadioButton
+        android:id="@+id/FurnitureChoice"
+        android:layout_width="155dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="     ריהוט"
+        app:layout_constraintEnd_toEndOf="@+id/FoodChoice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/FoodChoice"
+        app:layout_constraintTop_toBottomOf="@+id/FoodChoice" />
+
+    <Button
+        android:id="@+id/CameraButton"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="372dp"
+        android:background="@android:drawable/ic_menu_camera"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="מצלמה"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/DescriptionDonation"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="237dp"
+        android:layout_height="60dp"
+        android:background="@drawable/blue_button"
+        android:text="    קטגוריה            "
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:autoSizeTextType="none"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="281dp"
+        android:layout_height="66dp"
+        android:text="    מקום בארץ  "
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="674dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="174dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="48dp"
+        android:text="   צפון "
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="173dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        android:text="      דרום"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton3"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/radioButton3"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="174dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="44dp"
+        android:text="מרכז"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton6"
+        app:layout_constraintStart_toStartOf="@+id/radioButton6"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
+
+    <RadioButton
+        android:id="@+id/radioButton8"
+        android:layout_width="174dp"
+        android:layout_height="68dp"
+        android:text="ירושלים"
+        tools:layout_editor_absoluteX="727dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
